@@ -5,6 +5,8 @@ exports.up = function(knex, Promise) {
 
         tbl.string('name', 255).notNullable().unique();
 
+        tbl.string('instructions').notNullable();
+
         tbl
             .integer('dish_id')
             .unsigned()

@@ -5,7 +5,9 @@ exports.up = function(knex, Promise) {
 
         tbl.string('name', 255).notNullable().unique();
 
-        tbl.string('amount', 255).notNullable()
+        tbl.integer('amount').notNullable()
+
+        tbl.integer('measurement').notNullable()
     })
 };
 

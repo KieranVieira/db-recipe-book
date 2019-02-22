@@ -6,10 +6,10 @@ exports.seed = function(knex, Promise) {
     .then(function () {
       // Inserts seed entries
       return knex('recipes').insert([
-        {name: 'Hawaiian Pizza', dish_id: 1},
-        {name: 'Meatlovers Pizza', dish_id: 1},
-        {name: 'Ol Del Paso', dish_id: 2},
-        {name: 'Carne Assada', dish_id: 2}
+        {name: 'Hawaiian Pizza', instructions:"Do something put toppings here", dish_id: 1},
+        {name: 'Meatlovers Pizza', instructions:"Do something put bacon somewhere", dish_id: 1},
+        {name: 'Ol Del Paso', instructions:"Read the packaging", dish_id: 2},
+        {name: 'Carne Assada', instructions:"Wait for ages for it to slow cook", dish_id: 2}
       ]);
     });
 };

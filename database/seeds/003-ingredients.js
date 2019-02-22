@@ -6,11 +6,11 @@ exports.seed = function(knex, Promise) {
     .then(function () {
       // Inserts seed entries
       return knex('ingredients').insert([
-        {name: 'Flour', amount:'1 cup'},
-        {name: 'Pepperoni', amount:'1/2 cup'},
-        {name: 'Pineapple', amount:'1/2 cup'},
-        {name: 'Bacon', amount:'1/2 cup'},
-        {name: 'Sausage', amount:'1/2 cup'},
+        {name: 'Flour', amount:1, measurement:'cup'},
+        {name: 'Pepperoni', amount:0.5, measurement:'cup'},
+        {name: 'Pineapple', amount:0.5, measurement:'cup'},
+        {name: 'Bacon', amount:0.5, measurement:'cup'},
+        {name: 'Sausage', amount:0.5, measurement:'cup'},
       ]);
     });
 };
